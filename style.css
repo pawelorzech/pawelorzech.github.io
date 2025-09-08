@@ -203,6 +203,34 @@ a:hover {
     transform: scale(1.02);
 }
 
+/* Figure elements for blog posts */
+figure.post-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+figure.post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure.post-image:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+figure.post-image figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: #666;
+    font-style: italic;
+    line-height: 1.4;
+}
+
 /* Short Posts */
 .post-short .post-content {
     font-size: 1.125rem;
