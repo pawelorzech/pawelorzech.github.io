@@ -3,136 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawel Orzech - Blog</title>
+    <title>Pawel Orzech</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Pawel Orzech</h2>
+    <header class="header">
+        <div class="container">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="https://via.placeholder.com/60x60/666/fff?text=PO" alt="Pawel Orzech" class="avatar-img">
+                </div>
+                <div class="profile-info">
+                    <h1 class="name">Pawel Orzech</h1>
+                    <p class="bio">Thoughts, ideas, and stories from my journey</p>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#blog" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <nav class="nav">
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Archive</a>
+                <a href="#" class="nav-link">Photos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="posts">
+                
+                <!-- Long form post example -->
+                <article class="post post-long">
+                    <header class="post-header">
+                        <time class="post-date">09.08.2025</time>
+                        <h2 class="post-title">Welcome to My Blog</h2>
+                    </header>
+                    <div class="post-content">
+                        <p>This is my first blog post! I'm excited to share my thoughts and experiences with you. Starting a blog has been something I've been thinking about for a while.</p>
+                        <p>There's something magical about putting thoughts into words and sharing them with the world. Whether you're here by accident or intention, I'm glad you stopped by.</p>
+                        <a href="posts/welcome.html" class="read-more">Continue reading →</a>
+                    </div>
+                </article>
+
+                <!-- Short form post with image -->
+                <article class="post post-short">
+                    <header class="post-header">
+                        <time class="post-date">07.08.2025</time>
+                    </header>
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="https://via.placeholder.com/600x400/f0f0f0/666?text=Beautiful+Landscape" alt="Beautiful landscape photo" loading="lazy">
+                        </div>
+                        <p>Beautiful sunset from my evening walk. Sometimes the simple moments are the most memorable.</p>
+                    </div>
+                </article>
+
+                <!-- Short text-only post -->
+                <article class="post post-short">
+                    <header class="post-header">
+                        <time class="post-date">06.08.2025</time>
+                    </header>
+                    <div class="post-content">
+                        <p>Currently reading about minimalist design principles. Less truly can be more when done thoughtfully.</p>
+                    </div>
+                </article>
+
+                <!-- Short form post with image -->
+                <article class="post post-short">
+                    <header class="post-header">
+                        <time class="post-date">05.08.2025</time>
+                    </header>
+                    <div class="post-content">
+                        <div class="post-image">
+                            <img src="https://via.placeholder.com/600x300/f5f5f5/666?text=Tech+Setup" alt="My workspace setup" loading="lazy">
+                        </div>
+                        <p>My minimal workspace setup. Clean desk, clear mind.</p>
+                    </div>
+                </article>
+
+                <!-- Long form post -->
+                <article class="post post-long">
+                    <header class="post-header">
+                        <time class="post-date">04.08.2025</time>
+                        <h2 class="post-title">On Digital Minimalism</h2>
+                    </header>
+                    <div class="post-content">
+                        <p>I've been thinking a lot about digital minimalism lately. In our hyper-connected world, the constant stream of notifications and information can be overwhelming.</p>
+                        <p>The key is being intentional about what we let into our digital lives...</p>
+                        <a href="posts/digital-minimalism.html" class="read-more">Continue reading →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="pagination-link">← Older posts</a>
             </div>
         </div>
-    </nav>
-
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Welcome to My Blog</h1>
-                <p class="hero-subtitle">Thoughts, ideas, and stories from my journey</p>
-                <a href="#blog" class="cta-button">Read My Posts</a>
-            </div>
-            <div class="hero-bg"></div>
-        </section>
-
-        <section id="blog" class="blog-section">
-            <div class="container">
-                <h2 class="section-title">Latest Posts</h2>
-                <div class="blog-grid">
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <div class="placeholder-image">
-                                <i class="fas fa-image"></i>
-                            </div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">September 7, 2025</span>
-                                <span class="blog-tag">Welcome</span>
-                            </div>
-                            <h3>Welcome to My Blog</h3>
-                            <p>This is my first blog post! I'm excited to share my thoughts and experiences with you.</p>
-                            <a href="posts/welcome.html" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <div class="placeholder-image">
-                                <i class="fas fa-code"></i>
-                            </div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">Coming Soon</span>
-                                <span class="blog-tag">Tech</span>
-                            </div>
-                            <h3>My Development Journey</h3>
-                            <p>Exploring the world of software development and sharing insights along the way.</p>
-                            <a href="#" class="read-more disabled">Coming Soon</a>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <div class="placeholder-image">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                        </div>
-                        <div class="blog-content">
-                            <div class="blog-meta">
-                                <span class="blog-date">Coming Soon</span>
-                                <span class="blog-tag">Ideas</span>
-                            </div>
-                            <h3>Creative Thoughts</h3>
-                            <p>Random thoughts and creative ideas that inspire me in my daily life.</p>
-                            <a href="#" class="read-more disabled">Coming Soon</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Hi! I'm Pawel, and this is my personal blog where I share my thoughts, experiences, and ideas.</p>
-                        <p>Welcome to my corner of the internet. I'm excited to connect with you through my writing.</p>
-                    </div>
-                    <div class="about-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-text">Have something to say? I'd love to hear from you.</p>
-                <a href="mailto:contact@example.com" class="contact-button">Send Email</a>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Pawel Orzech. All rights reserved.</p>
+            <p>© 2025 Pawel Orzech</p>
         </div>
     </footer>
 
